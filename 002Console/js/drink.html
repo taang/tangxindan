@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style >
+        body{
+            font-size:50px;
+        }
+    </style>
     <script>
         function isInteger(c){
             return c%1===0;
@@ -11,7 +16,7 @@
         var count;//数量
         count=prompt(price +"元一杯，请问您要购买多少杯？")
         if(isNaN(count)){
-            alert("请输入数字！")
+            document.write("请输入数字！")
         }
         else{
             if(isInteger(count )){
@@ -21,10 +26,10 @@
                 else{
                     totalPrice=count *price *0.75+price /4;
                 }
-                alert ("需要支付"+totalPrice +"元")
+                document.write ("需要支付"+totalPrice +"元")
             }
             else{
-                alert ("必须是整数杯")
+                document.write ("必须是整数杯")
             }
         }
     </script>
