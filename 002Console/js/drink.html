@@ -10,13 +10,18 @@
             alert("请输入数字！")
         }
         else{
-            if(count%2==0){
-                totalPrice=count*price*0.75;
+            if (isInteger(count )){
+                if(count % 2==0){
+                    totalPrice=count*price*0.75;
+                }
+                else{
+                    totlPrice=count *price *0.75+price/4;
+                }
+                alert ("一共要支付"+totalPrice+"元。")
             }
             else{
-                totlPrice=count *price *0.75+price/4;
+                alert("请输入整数！");
             }
-            alert ("一共要支付"+totalPrice+"元。")
         }
     </script>
 </head>
